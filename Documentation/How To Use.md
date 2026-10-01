@@ -12,7 +12,7 @@ I designed it to be relatively straightforward enough for anyone to use, so long
 If you're exceptionally willing though, I encourage you to clone the repo, edit the source code yourself, and make it your own.
 
 ### Walkthrough of the compiled version:
-1. Look in the [CompiledBinaries](CompiledBinaries) folder for the, well, compiled binaries. They're ready to use.
+1. Look in the [CompiledBinaries](/CompiledBinaries) folder for the, well, compiled binaries. They're ready to use.
 
 2. First, create a folder somewhere you can easily access it, like on your desktop.
     - This will be a folder solely for the program.
