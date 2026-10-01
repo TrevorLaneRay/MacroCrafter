@@ -17,7 +17,7 @@ If you're exceptionally willing though, I encourage you to clone the repo, edit 
 2. First, create a folder somewhere you can easily access it, like on your desktop.
     - This will be a folder solely for the program.
     - Don't just save the program to your desktop.
-        - Put it in **its own folder** that you've created for it. (Here's an example [screenshot](Documentation/HowToInstall.png).)
+        - Put it in **its own folder** that you've created for it. (Here's an example [screenshot](HowToInstall.png).)
         - Create a shortcut to it on your desktop, if you need easier access.
         - There is no actual "installation." This is wholly self-contained, and can be removed by simply deleting it.
         - It operates entirely within its own folder, and touches no files outside of it.
