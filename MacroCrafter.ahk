@@ -53,7 +53,7 @@
 InstallKeybdHook(true, true)
 
 ;Version & author of the script.
-scriptVersion := "0.1.1b"
+scriptVersion := "0.1.2b"
 scriptAuthor := "TrevorLaneRay"
 ;Create a little tray icon info.
 A_IconTip := "MacroCrafter v." . scriptVersion
@@ -178,27 +178,27 @@ GroupAdd "Minecraft", "Minecraft ahk_class Bedrock ahk_exe Minecraft.Windows.exe
 	Teleport("setBack")
 	return
 }
-^Numpad0::{ ;Teleport to home 00.
+^Numpad0::{ ;Teleport to home 00 with Ctrl modifier.
 	LogEvent("Event", "Numpad0 pressed. Initiating Teleport(`"" . home00Name . "`").")
 	Teleport(home00Name)
 	return
 }
-^Numpad1::{ ;Teleport to home 01.
+^Numpad1::{ ;Teleport to home 01 with Ctrl modifier.
 	LogEvent("Event", "Numpad1 pressed. Initiating Teleport(`"" . home01Name . "`").")
 	Teleport(home01Name)
 	return
 }
-^Numpad2::{ ;Teleport to home 02.
+^Numpad2::{ ;Teleport to home 02 with Ctrl modifier.
 	LogEvent("Event", "Numpad2 pressed. Initiating Teleport(`"" . home02Name . "`").")
 	Teleport(home02Name)
 	return
 }
-^Numpad3::{ ;Teleport to home 03.
+^Numpad3::{ ;Teleport to home 03 with Ctrl modifier.
 	LogEvent("Event", "Numpad3 pressed. Initiating Teleport(`"" . home03Name . "`").")
 	Teleport(home03Name)
 	return
 }
-^Numpad4::{ ;Teleport to home 04.
+^Numpad4::{ ;Teleport to home 04 with Ctrl modifier.
 	LogEvent("Event", "Numpad4 pressed. Initiating Teleport(`"" . home04Name . "`").")
 	Teleport(home04Name)
 	return
@@ -208,25 +208,75 @@ GroupAdd "Minecraft", "Minecraft ahk_class Bedrock ahk_exe Minecraft.Windows.exe
 	Teleport(home05Name)
 	return
 }
-^Numpad6::{ ;Teleport to home 06.
+^Numpad6::{ ;Teleport to home 06 with Ctrl modifier.
 	LogEvent(" Event", "Numpad6 pressed. Initiating Teleport(`"" . home06Name . "`").")
 	Teleport(home06Name)
 	return
 }
-^Numpad7::{ ;Teleport to home 07.
+^Numpad7::{ ;Teleport to home 07 with Ctrl modifier.
 	LogEvent("Event", "Numpad7 pressed. Initiating Teleport(`"" . home07Name . "`").")
 	Teleport(home07Name)
 	return
 }
-^Numpad8::{ ;Teleport to home 08.
+^Numpad8::{ ;Teleport to home 08 with Ctrl modifier.
 	LogEvent("Event", "Numpad8 pressed. Initiating Teleport(`"" . home08Name . "`").")
 	Teleport(home08Name)
 	return
 }
-^Numpad9::{ ;Teleport to home 09.
+^Numpad9::{ ;Teleport to home 09 with Ctrl modifier.
 	LogEvent("Event", "Numpad9 pressed. Initiating Teleport(`"" . home09Name . "`").") 
 	Teleport(home09Name) 
 	return 
+}
+^!Numpad0::{ ;Teleport to alternate home 00 with Alt and Ctrl modifiers.
+	LogEvent("Event", "Ctrl+Alt+Numpad0 pressed. Initiating Teleport(`"" . homeAlt00Name . "`").")
+	Teleport(homeAlt00Name)
+	return
+}
+^!Numpad1::{ ;Teleport to alternate home 01 with Alt and Ctrl modifiers.
+	LogEvent("Event", "Ctrl+Alt+Numpad1 pressed. Initiating Teleport(`"" . homeAlt01Name . "`").")
+	Teleport(homeAlt01Name)
+	return
+}
+^!Numpad2::{ ;Teleport to alternate home 02 with Alt and Ctrl modifiers.
+	LogEvent("Event", "Ctrl+Alt+Numpad2 pressed. Initiating Teleport(`"" . homeAlt02Name . "`").")
+	Teleport(homeAlt02Name)
+	return
+}
+^!Numpad3::{ ;Teleport to alternate home 03 with Alt and Ctrl modifiers.
+	LogEvent("Event", "Ctrl+Alt+Numpad3 pressed. Initiating Teleport(`"" . homeAlt03Name . "`").")
+	Teleport(homeAlt03Name)
+	return
+}
+^!Numpad4::{ ;Teleport to alternate home 04 with Alt and Ctrl modifiers.
+	LogEvent("Event", "Ctrl+Alt+Numpad4 pressed. Initiating Teleport(`"" . homeAlt04Name . "`").")
+	Teleport(homeAlt04Name)
+	return
+}
+^!Numpad5::{ ;Teleport to alternate home 05 with Alt and Ctrl modifiers.
+	LogEvent("Event", "Ctrl+Alt+Numpad5 pressed. Initiating Teleport(`"" . homeAlt05Name . "`").")
+	Teleport(homeAlt05Name)
+	return
+}
+^!Numpad6::{ ;Teleport to alternate home 06 with Alt and Ctrl modifiers.
+	LogEvent("Event", "Ctrl+Alt+Numpad6 pressed. Initiating Teleport(`"" . homeAlt06Name . "`").")
+	Teleport(homeAlt06Name)
+	return
+}
+^!Numpad7::{ ;Teleport to alternate home 07 with Alt and Ctrl modifiers.
+	LogEvent("Event", "Ctrl+Alt+Numpad7 pressed. Initiating Teleport(`"" . homeAlt07Name . "`").")
+	Teleport(homeAlt07Name)
+	return
+}
+^!Numpad8::{ ;Teleport to alternate home 08 with Alt and Ctrl modifiers.
+	LogEvent("Event", "Ctrl+Alt+Numpad8 pressed. Initiating Teleport(`"" . homeAlt08Name . "`").")
+	Teleport(homeAlt08Name)
+	return
+}
+^!Numpad9::{ ;Teleport to alternate home 09 with Alt and Ctrl modifiers.
+	LogEvent("Event", "Ctrl+Alt+Numpad9 pressed. Initiating Teleport(`"" . homeAlt09Name . "`").")
+	Teleport(homeAlt09Name)
+	return
 }
 F11::{ ;Start sending chat messages line-by-line from the specified chat text file.
 	LogEvent("Event", "F11 Pressed. Initializing Chatterbox()")

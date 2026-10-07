@@ -44,7 +44,16 @@ defaultHome06Name := "Home06"
 defaultHome07Name := "Home07"
 defaultHome08Name := "Home08"
 defaultHome09Name := "Home09"
-
+defaultHomeAlt00Name := "AltHome"
+defaultHomeAlt01Name := "AltHome01"
+defaultHomeAlt02Name := "AltHome02"
+defaultHomeAlt03Name := "AltHome03"
+defaultHomeAlt04Name := "AltHome04"
+defaultHomeAlt05Name := "AltHome05"
+defaultHomeAlt06Name := "AltHome06"
+defaultHomeAlt07Name := "AltHome07"
+defaultHomeAlt08Name := "AltHome08"
+defaultHomeAlt09Name := "AltHome09"
 ;Default additional delay for chat/command interface.
 ;In the case of a slower computer, the game may need additional time for the chat window to appear.
 ;This can give it more time if needed.
@@ -92,6 +101,17 @@ if not FileExist(defaultScriptSettingsFile) {
     IniWrite(defaultHome07Name, defaultScriptSettingsFile, "HomesSettings", "Home07Name")
     IniWrite(defaultHome08Name, defaultScriptSettingsFile, "HomesSettings", "Home08Name")
     IniWrite(defaultHome09Name, defaultScriptSettingsFile, "HomesSettings", "Home09Name")
+    IniWrite(defaultHomeAlt00Name, defaultScriptSettingsFile, "HomesSettings", "HomeAlt00Name")
+    IniWrite(defaultHomeAlt01Name, defaultScriptSettingsFile, "HomesSettings", "HomeAlt01Name")
+    IniWrite(defaultHomeAlt02Name, defaultScriptSettingsFile, "HomesSettings", "HomeAlt02Name")
+    IniWrite(defaultHomeAlt02Name, defaultScriptSettingsFile, "HomesSettings", "HomeAlt02Name")
+    IniWrite(defaultHomeAlt03Name, defaultScriptSettingsFile, "HomesSettings", "HomeAlt03Name")
+    IniWrite(defaultHomeAlt04Name, defaultScriptSettingsFile, "HomesSettings", "HomeAlt04Name")
+    IniWrite(defaultHomeAlt05Name, defaultScriptSettingsFile, "HomesSettings", "HomeAlt05Name")
+    IniWrite(defaultHomeAlt06Name, defaultScriptSettingsFile, "HomesSettings", "HomeAlt06Name")
+    IniWrite(defaultHomeAlt07Name, defaultScriptSettingsFile, "HomesSettings", "HomeAlt07Name")
+    IniWrite(defaultHomeAlt08Name, defaultScriptSettingsFile, "HomesSettings", "HomeAlt08Name")
+    IniWrite(defaultHomeAlt09Name, defaultScriptSettingsFile, "HomesSettings", "HomeAlt09Name")
     IniWrite(defaultAdditionalChatCommandDelay, defaultScriptSettingsFile, "ScriptSettings", "AdditionalChatCommandDelay")
     IniWrite(defaultChatRateLimiterDelay, defaultScriptSettingsFile, "ScriptSettings", "ChatRateLimiterDelay")
     IniWrite(defaultChatterboxTextFile, defaultScriptSettingsFile, "ScriptSettings", "ChatterboxTextFile")
@@ -142,6 +162,16 @@ if FileExist(defaultScriptSettingsFile) {
     home07Name := IniRead(scriptSettingsFile, "HomesSettings", "Home07Name", defaultHome07Name)
     home08Name := IniRead(scriptSettingsFile, "HomesSettings", "Home08Name", defaultHome08Name)
     home09Name := IniRead(scriptSettingsFile, "HomesSettings", "Home09Name", defaultHome09Name)
+    homeAlt00Name := IniRead(scriptSettingsFile, "HomesSettings", "HomeAlt00Name", defaultHomeAlt00Name)
+    homeAlt01Name := IniRead(scriptSettingsFile, "HomesSettings", "HomeAlt01Name", defaultHomeAlt01Name)
+    homeAlt02Name := IniRead(scriptSettingsFile, "HomesSettings", "HomeAlt02Name", defaultHomeAlt02Name)
+    homeAlt03Name := IniRead(scriptSettingsFile, "HomesSettings", "HomeAlt03Name", defaultHomeAlt03Name)
+    homeAlt04Name := IniRead(scriptSettingsFile, "HomesSettings", "HomeAlt04Name", defaultHomeAlt04Name)
+    homeAlt05Name := IniRead(scriptSettingsFile, "HomesSettings", "HomeAlt05Name", defaultHomeAlt05Name)
+    homeAlt06Name := IniRead(scriptSettingsFile, "HomesSettings", "HomeAlt06Name", defaultHomeAlt06Name)
+    homeAlt07Name := IniRead(scriptSettingsFile, "HomesSettings", "HomeAlt07Name", defaultHomeAlt07Name)
+    homeAlt08Name := IniRead(scriptSettingsFile, "HomesSettings", "HomeAlt08Name", defaultHomeAlt08Name)
+    homeAlt09Name := IniRead(scriptSettingsFile, "HomesSettings", "HomeAlt09Name", defaultHomeAlt09Name)
 
     additionalChatCommandDelay := IniRead(scriptSettingsFile, "ScriptSettings", "AdditionalChatCommandDelay", defaultAdditionalChatCommandDelay)
     chatRateLimiterDelay := IniRead(scriptSettingsFile, "ScriptSettings", "ChatRateLimiterDelay", defaultChatRateLimiterDelay)

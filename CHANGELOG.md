@@ -1,4 +1,10 @@
 # Changelog
+## v0.1.2b
+### Added or Changed
+- Added Ctrl+Alt combo as a modifier for homes accessed with the NumPad, bringing total homes usable to 20.
+- Added settings file entries for new homes accessible with the Ctrl+Alt combo.
+- Recompiled for v0.1.2b.
+
 ## v0.1.1b
 ### Added or Changed
 - Changed Chatterbox()'s semi-auto mode to use the LCtrl key instead of Space.
