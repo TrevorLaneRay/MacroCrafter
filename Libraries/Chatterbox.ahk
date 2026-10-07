@@ -45,7 +45,9 @@ Chatterbox(chatTextFile := "ScriptFiles\ChatText.txt", chatMode := "Auto"){ ;A b
             } else if chatMode = "SemiAuto" {
                 ;Semi-auto mode: wait for the user to press Space before sending the next chat line.
                 LogEvent("Event", "Waiting for user input in Semi-Auto mode before sending next chat line:`n`"" . ChatLines[A_Index + 1] . "`"")
-                KeyWait("Space")
+                ToolTip("Semi-Auto mode active. Waiting for user to press Ctrl before sending next chat line. (Line: " . A_Index . ")", A_ScreenWidth / 2, 0)
+                KeyWait("LCtrl")
+                ToolTip()
                 continue
             } else if chatMode = "Loop" {
                 ;Loop mode: continuously send chat lines in a sequential loop without stopping.
