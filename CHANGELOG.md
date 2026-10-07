@@ -1,4 +1,9 @@
 # Changelog
+## v0.1.1b
+### Added or Changed
+- Changed Chatterbox()'s semi-auto mode to use the LCtrl key instead of Space.
+- Added on-screen tooltip to indicate that Chatterbox() is waiting for the user to press a key in semi-auto mode.
+
 ## v0.1.0b
 ### Added or Changed
 - Initial commit.

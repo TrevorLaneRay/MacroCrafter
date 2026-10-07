@@ -53,7 +53,7 @@
 InstallKeybdHook(true, true)
 
 ;Version & author of the script.
-scriptVersion := "0.1.0b"
+scriptVersion := "0.1.1b"
 scriptAuthor := "TrevorLaneRay"
 ;Create a little tray icon info.
 A_IconTip := "MacroCrafter v." . scriptVersion
